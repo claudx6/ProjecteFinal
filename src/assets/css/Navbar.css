@@ -1,0 +1,73 @@
+/* Navbar.css */
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3498db; 
+    color: #000; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .left-section img {
+    
+  }
+  
+  .middle-section a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 15px;
+  }
+  
+  .right-section img {
+    /* Estilos para las imágenes del carrito e inicio de sesión en la parte derecha */
+
+
+  .navbar {
+    height: 10vh;
+    background: #1b1919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10rem;
+  }
+  
+  .nav-items {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: flex-end;
+    margin-right: 2rem;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    margin-right: 2rem;
+    padding: 6px 16px;
+    border-radius: 5px;
+  }
+  
+  .nav-item a:hover {
+    background: rgb(0, 212, 212);
+  }

@@ -1,42 +1,64 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .home,
+  .consulting,
+  .contactus,
+  .design,
+  .development,
+  .marketing,
+  .products,
+  .services,
+  .signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-size: 4rem;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    text-shadow: 4px 4px 4px #fff;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  .home {
+    background-image: url(./images/home.jpg);
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  
+  .consulting {
+    background-image: url(./images/consulting.jpg);
+  }
+  
+  .design {
+    background-image: url(./images/design.jpg);
+  }
+  
+  .development {
+    background-image: url(./images/development.jpg);
+  }
+  
+  .marketing {
+    background-image: url(./images/marketing.jpg);
+  }
+  
+  .products {
+    background-image: url(./images/products.jpg);
+  }
+  
+  .contactus {
+    background-image: url(./images/contactus.jpg);
+  }
+  
+  .services {
+    background-image: url(./images/services.jpg);
+  }
+  
+  .signup {
+    background-image: url(./images/signup.jpg);
+  }
