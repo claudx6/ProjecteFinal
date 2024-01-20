@@ -1,0 +1,13 @@
+.carousel-indicators [data-bs-target] {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+  text-shadow: -1px -1px 1px #000,  
+                1px -1px 1px #000,
+               -1px  1px 1px #000,
+                1px  1px 1px #000;
+}

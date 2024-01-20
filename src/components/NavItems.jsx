@@ -8,25 +8,25 @@ export const navItems = [
     {
       id: 2,
       title: "Tienda",
-      path: "./tienda",
+      path: "./Shop",
       cName: "nav-item",
     },
     {
       id: 3,
       title: "Servicios",
-      path: "./servicios",
+      path: "./Services",
       cName: "nav-item",
     },
     {
       id: 4,
       title: "Nosotros",
-      path: "./nosotros",
+      path: "./AboutUs",
       cName: "nav-item",
     },
     {
         id: 5,
         title: "Contacto",
-        path: "./contacto",
+        path: "./ContactUs",
         cName: "nav-item",
     },
   ];
@@ -35,13 +35,13 @@ export const navItems = [
     {
       id: 1,
       title: "Servicio a domicilio",
-      path: "./marketing",
+      path: "./HomeService",
       cName: "submenu-item",
     },
     {
       id: 2,
       title: "Perruqueria canina",
-      path: "./consulting",
+      path: "./HairSalon",
       cName: "submenu-item",
     },
   ];
@@ -50,13 +50,13 @@ export const navItems = [
     {
       id: 1,
       title: "Quiénes somos",
-      path: "./marketing",
+      path: "./WhoAreWe",
       cName: "submenu-item",
     },
     {
       id: 2,
       title: "Nuestra tienda",
-      path: "./consulting",
+      path: "./OurShop",
       cName: "submenu-item",
     },
   ];
@@ -65,31 +65,37 @@ export const navItems = [
     {
       id: 1,
       title: "Perros",
-      path: "./categoria1",
+      path: "./Dogs",
       cName: "submenu-item",
     },
     {
       id: 2,
       title: "Gatos",
-      path: "./categoria1",
+      path: "./Cats",
       cName: "submenu-item",
     },
     {
       id: 3,
       title: "Peces",
-      path: "./categoria1",
+      path: "./Fish",
       cName: "submenu-item",
     },
     {
       id: 4,
       title: "Aves",
-      path: "./categoria1",
+      path: "./Birds",
       cName: "submenu-item",
     },
     {
       id: 5,
       title: "Roedores",
-      path: "./categoria1",
+      path: "./rodents",
+      cName: "submenu-item",
+    },
+    {
+      id: 5,
+      title: "Reptiles",
+      path: "./Reptiles",
       cName: "submenu-item",
     },
 

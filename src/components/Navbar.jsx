@@ -15,7 +15,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <Link to="/" className="navbar-logo">
-          PETIT AMAZONES
+          NATURE
         </Link>
         <ul className="nav-items">
           {navItems.map((item) => {

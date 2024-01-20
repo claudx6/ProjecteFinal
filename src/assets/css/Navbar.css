@@ -1,37 +1,12 @@
 /* Navbar.css */
-/* .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #3498db; 
-    color: #000; 
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .left-section img {
-    
-  }
-  
-  .middle-section a {
-    text-decoration: none;
-    color: #000;
-    margin: 0 15px;
-  }
-  
-  .right-section img {
-    /* Estilos para las imágenes del carrito e inicio de sesión en la parte derecha */
-
 
   .navbar {
-    height: 10vh;
+    height: 11vh;
     background: #1b1919;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
   }
   
   .navbar-logo {
@@ -50,6 +25,8 @@
     text-align: center;
     width: 70vw;
     justify-content: flex-end;
+    margin: 0;
+    padding: 0;
     margin-right: 2rem;
   }
   
