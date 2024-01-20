@@ -13,7 +13,7 @@ function ControlledCarousel() {
     <div>
       <Carousel>
     <Carousel.Item style={{height:'60vh', width: '100%', position:'relative'}}>
-      <img style={{position:'absolute', bottom:'-25rem'}}
+      <img style={{position:'absolute', bottom:'-10rem'}}
         className="d-block w-100"
         src={img1}
         alt="First slide"

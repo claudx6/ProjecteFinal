@@ -1,0 +1,77 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #72D3FE;
+}
+
+.information {
+    width: 100%;
+    color: black;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: flex-start; /* Coloca los elementos arriba verticalmente */
+}
+
+.information .informationContainer {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    padding: 20px;
+    text-align: center;
+}
+
+.information .informationContainer .titlesDiv {
+    margin-bottom: 2rem; /* Espacio entre titlesDiv y el siguiente div */
+}
+
+.information .informationContainer .titlesDiv small {
+    letter-spacing: 0.8rem;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: black;
+    line-height: 1.5rem;
+}
+
+.information .informationContainer .infoDiv {
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: row; /* Alinea los elementos en fila */
+    text-align: left;
+}
+
+.information .informationContainer .infoDiv .textDiv {
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.information .informationContainer .infoDiv .textDiv .singleInfo .number {
+    background: #2196f3;
+    padding: 5px 12px;
+    width: 40px;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: black;
+}
+
+.information .informationContainer .infoDiv .textDiv .singleInfo .colorOne {
+    background: green;
+}
+
+.information .informationContainer .infoDiv .textDiv .singleInfo .colorTwo {
+    background: blueviolet;
+}
+
+.information .informationContainer .infoDiv .imgDiv {
+    margin: auto;
+}
+
+.information .informationContainer .infoDiv .imgDiv img {
+    width: 100%;
+    max-width: 1000px;
+}
