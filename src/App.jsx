@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Home /> 
+      <Home />
       <br />
       {/* <BrowserRouter>
         <Routes>

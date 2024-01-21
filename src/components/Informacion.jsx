@@ -6,7 +6,7 @@ import img4 from '../assets/images/carousel/img4.jpg';
 
 function Informacion() {
   return (
-    <div className='information container section'>
+    <div className='information'>
         <div className="informationContainer">
             <div className="titlesDiv">
                 <small>Nuestros servicios</small>

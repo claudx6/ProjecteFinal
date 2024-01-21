@@ -1,0 +1,71 @@
+.info {
+    background: red;
+    height: 70vh;
+    width: 100%;
+    padding: 30px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-bottom: 200px; /* Ajusta según sea necesario */
+}
+
+.titleDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra los elementos verticalmente */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    gap: 1.5rem;
+}
+
+.cardsDiv {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding: 40px;
+}
+
+.singleCard {
+    background: #72D3FE;
+    padding: 3rem 2rem;
+    border-radius: 10rem;
+    gap: 1rem;
+    text-align: center;
+    height: 320px;
+    flex: 1;
+    max-width: 250px;
+}
+
+.iconDiv {
+    justify-content: center;
+    margin: auto;
+    background: #2196f3;
+    width: max-content;
+    height: 55px;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+.icon {
+    color: black;
+}
+
+.cardTitle {
+    color: black;
+    font-weight: 700;
+}
+
+.colorOne {
+    background: #2196f3;
+}
+
+.colorTwo {
+    background: #2196f3;
+}
+
+.colorThree {
+    background: #2196f3;
+}
