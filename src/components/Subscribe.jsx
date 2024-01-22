@@ -1,7 +1,6 @@
 import React from 'react';
-import "/src/assets/css/Info1.css";
+import "/src/assets/css/Subscribe.css";
 
-import img4 from '../assets/images/carousel/img4.jpg';
 
 
 const Info1 = () => {

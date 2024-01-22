@@ -2,16 +2,19 @@ import React from "react";
 import Carousel from '../components/Carousel.jsx';
 import Informacion from "../components/Informacion.jsx";
 import Info from "../components/Info.jsx";
-import Info1 from "../components/Info1.jsx";
+// import Info1 from "../components/Info1.jsx";
+import Subscribe from "../components/Subscribe.jsx";
+
 
 function Home() {
   return (
     <div>
       <Carousel />
-      <br />
+      {/* <br /> */}
       <Informacion />
       <Info />
-      <Info1 />
+      {/* <Info1 /> */}
+      {Subscribe}
     </div>
   );
 }
