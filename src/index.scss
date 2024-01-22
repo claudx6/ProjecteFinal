@@ -56,10 +56,6 @@ li{
     cursor: pointer;
 }
 
-.none{
-    display: none;
-}
-
 .flex{
     display: flex;
     align-items: center;
@@ -68,6 +64,10 @@ li{
 .grid{
     display: grid;
     align-items: center;
+}
+
+.none{
+    display: none;
 }
 
 .btn{

@@ -7,6 +7,10 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    position: fixed;
+    width: 100%;
+    flex-direction: column;
+    
   }
   
   .navbar-logo {
@@ -48,3 +52,9 @@
   .nav-item a:hover {
     background: rgb(0, 212, 212);
   }
+  
+@media screen (max-width: 768px) {
+    .navbar{
+      position: absolute;
+    }
+}

@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 // import { BrowserRouter, Redirect, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 // import Carousel from './pages/Carousel';
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Home />
       <br />
       {/* <BrowserRouter>

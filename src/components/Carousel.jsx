@@ -12,7 +12,7 @@ function ControlledCarousel() {
   return (
     <div>
       <Carousel>
-    <Carousel.Item style={{height:'60vh', width: '100%', position:'relative'}}>
+    <Carousel.Item style={{height:'70vh', width: '100%', position:'relative'}}>
       <img style={{position:'absolute', bottom:'-10rem'}}
         className="d-block w-100"
         src={img1}
@@ -23,7 +23,7 @@ function ControlledCarousel() {
         <p>Disponemos de una tienda equipada con todo lo que necesita tu mascota.</p>
       </Carousel.Caption>
     </Carousel.Item>
-    <Carousel.Item style={{height:'60vh', width: '100%', position:'relative'}}>
+    <Carousel.Item style={{height:'70vh', width: '100%', position:'relative'}}>
       <img style={{position:'absolute', bottom:'-5rem'}}
         className="d-block w-100"
         src={img2}
@@ -35,7 +35,7 @@ function ControlledCarousel() {
         {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
       </Carousel.Caption>
     </Carousel.Item>
-    <Carousel.Item style={{height:'60vh', width: '100%', position:'relative'}}>
+    <Carousel.Item style={{height:'70vh', width: '100%', position:'relative'}}>
       <img style={{position:'absolute', bottom:'-10rem'}}
         className="d-block w-100"
         src={img3}

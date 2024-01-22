@@ -6,8 +6,18 @@
 
 .carousel-caption h3,
 .carousel-caption p {
+  color: #fff;
   text-shadow: -1px -1px 1px #000,  
                 1px -1px 1px #000,
                -1px  1px 1px #000,
                 1px  1px 1px #000;
 }
+
+.carousel-caption h3{
+  font-size: 25px;
+}
+
+.carousel-caption p{
+  font-size: 20px;
+}
+

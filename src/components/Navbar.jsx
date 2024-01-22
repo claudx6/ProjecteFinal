@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "/src/assets/css/Navbar.css";
+import "/src/index.css";
+
 import { navItems, serviceDropdown, tiendaDropdown, aboutUsDropdown } from "./NavItems";
 import Button from "./Button";
 import Dropdown from "./Dropdown";
