@@ -1,54 +1,19 @@
 import React from 'react';
-import "/src/assets/css/Subscribe.css";
+import "/src/assets/css/Subscribe.scss";
 
-
-
-const Info1 = () => {
+const Subscribe = () => {
     return (
-        <div className='info1 container section'>
-            <div className="sectionContainer grid">
-             <div className='imgDiv'>
-                <img src={img4} alt="" />
-             </div>
-
-            <div className="textDiv">
-                <h2>Lorem ipsum dolor sit amet</h2>
+        <div className='subscribe section'>
+            <div className='sectionContainer container'>
+                <h2>Subscríbete a nuestra Newsletter y entérate de las últimas novedades</h2>
+                <div className="inputDiv flex">
+                    <input type="text" placeholder='Ingresa un e-mail' />
+                    <button className='btn'>Subscribirse</button>
+                </div>
             </div>
 
-            <div className="grids grid">
-
-                <div className="singleGrid">
-                    <span className='gridTitle'>
-                        Lorem ipsum dolor
-                    </span>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat dolorem nostrum molestiae totam voluptas eum officiis amet distinctio vitae! Laborum numquam sint excepturi architecto neque autem quaerat, provident optio delectus?
-                    </p>
-                </div>
-            
-                <div className="singleGrid">
-                    <span className='gridTitle'>
-                        Lorem ipsum dolor
-                    </span>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat dolorem nostrum molestiae totam voluptas eum officiis amet distinctio vitae! Laborum numquam sint excepturi architecto neque autem quaerat, provident optio delectus?
-                    </p>
-                </div>
-
-                <div className="singleGrid">
-                    <span className='gridTitle'>
-                        Lorem ipsum dolor
-                    </span>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat dolorem nostrum molestiae totam voluptas eum officiis amet distinctio vitae! Laborum numquam sint excepturi architecto neque autem quaerat, provident optio delectus?
-                    </p>
-                </div>
-
-            </div>
-
-            </div>
         </div>
     )
 }
 
-export default Info1
+export default Subscribe

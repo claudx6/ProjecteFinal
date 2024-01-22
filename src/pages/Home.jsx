@@ -4,6 +4,8 @@ import Informacion from "../components/Informacion.jsx";
 import Info from "../components/Info.jsx";
 // import Info1 from "../components/Info1.jsx";
 import Subscribe from "../components/Subscribe.jsx";
+import Footer from "../components/Footer.jsx";
+
 
 
 function Home() {
@@ -14,7 +16,8 @@ function Home() {
       <Informacion />
       <Info />
       {/* <Info1 /> */}
-      {Subscribe}
+      <Subscribe />
+      <Footer />
     </div>
   );
 }

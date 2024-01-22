@@ -1,0 +1,29 @@
+.subscribe{
+    background: yellow;
+
+    .sectionContainer{
+        text-align: center;
+        .inputDiv{
+            margin-top: 1 rem;
+            flex-direction: column;
+            background: white;
+            border-radius: 1rem;
+
+            input{
+                border: none;
+                outline: none;
+                background: transparent;
+                padding: 1rem .5rem;
+
+                &:placeholder{
+                    font-size: 13px;
+                    opacity: .5;
+                }
+            }
+
+            .btn{
+                width: 100%;
+            }
+        }
+    }
+}
