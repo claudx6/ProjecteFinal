@@ -9,9 +9,6 @@ import { BsShieldCheck } from "react-icons/bs";
 import { MdOutlineShoppingBasket } from "react-icons/md";
 
 
-
-
-
 const Info = () => {
     return (
         <div className='info'>
