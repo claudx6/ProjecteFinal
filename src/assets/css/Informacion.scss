@@ -59,10 +59,13 @@ body, html {
                     }
 
                     .colorOne{
-                        background: var(--colorOne);
+                        background: var(--HoverColor);
                     }
                     .colorTwo{
-                        background: var(--colorTwo);
+                        background: var(--HoverColor);
+                    }
+                    .colorThree{
+                        background: var(--HoverColor);
                     }
                 }
             }

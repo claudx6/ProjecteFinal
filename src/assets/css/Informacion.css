@@ -57,10 +57,13 @@ body, html {
   color: var(--whiteColor);
 }
 .information .informationContainer .infoDiv .textDiv .singleInfo .colorOne {
-  background: var(--colorOne);
+  background: var(--HoverColor);
 }
 .information .informationContainer .infoDiv .textDiv .singleInfo .colorTwo {
-  background: var(--colorTwo);
+  background: var(--HoverColor);
+}
+.information .informationContainer .infoDiv .textDiv .singleInfo .colorThree {
+  background: var(--HoverColor);
 }
 .information .informationContainer .infoDiv .imgDiv {
   flex: -20;
