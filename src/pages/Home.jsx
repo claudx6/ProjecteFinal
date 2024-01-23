@@ -15,12 +15,11 @@ function Home() {
     <div>
       <Navbar />
       <Carousel />
-      {/* <br /> */}
       <Informacion />
-      <Info />
+      {/* <Info /> */}
       {/* <Info1 /> */}
-      <Subscribe />
-      <Footer />
+      {/* <Subscribe /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

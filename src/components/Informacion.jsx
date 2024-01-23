@@ -1,45 +1,45 @@
 import React from "react";
 import "/src/assets/css/Informacion.css";
-
+import '/src/index.css';
 import img4 from '../assets/images/carousel/img4.jpg';
-
 
 function Informacion() {
   return (
-    <div className='information'>
+    <div className='information container section'>
         <div className="informationContainer">
             <div className="titlesDiv">
                 <small>Nuestros servicios</small>
-                <h2>Disponemos de diferentes servicios</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, et corrupti cum nostrum quod iusto maiores. Repudiandae, aliquam? Omnis suscipit recusandae ratione vero quibusdam hic laborum magni temporibus aliquam saepe?</p>
             </div>
         
             <div className="infoDiv grid">
-
-                <div className="textDiv grid">
-
+                <div className="textDiv">
                     <div className="singleInfo">
                         <span className='number colorOne'>01</span>
-                        <h4>Tienda física</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa eaque quaerat beatae dolorem saepe dicta pariatur quo eligendi libero doloremque eum sit asperiores, molestiae quisquam ut impedit incidunt iste tempore!</p>
+                        <div>
+                            <h4>Tienda física</h4>
+                            <p>Descubre un paraíso para tus mascotas en nuestra tienda física. Ofrecemos una amplia gama de productos cuidadosamente seleccionados, desde alimentos nutritivos hasta juguetes y accesorios de calidad. Nuestro personal amable y conocedor está listo para ayudarte a encontrar todo lo que necesitas para mantener a tus amigos peludos felices y saludables.</p>
+                        </div>
                     </div>
 
                     <div className="singleInfo">
                         <span className='number colorTwo'>02</span>
-                        <h4>Perruquería canina</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa eaque quaerat beatae dolorem saepe dicta pariatur quo eligendi libero doloremque eum sit asperiores, molestiae quisquam ut impedit incidunt iste tempore!</p>
+                        <div>
+                            <h4>Perruquería canina</h4>
+                            <p>Transforma la apariencia de tus queridas mascotas con nuestra perruquería canina de primera clase. Nuestro equipo de estilistas expertos se especializa en tratamientos de spa para perros, cortes de pelo personalizados y cuidado integral. En un ambiente relajado y seguro, garantizamos que tus mascotas se sientan mimadas y salgan luciendo radiantes.</p>
+                        </div>
                     </div>
 
                     <div className="singleInfo">
                         <span className='number colorThree'>03</span>
-                        <h4>Servicio a domicilio</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa eaque quaerat beatae dolorem saepe dicta pariatur quo eligendi libero doloremque eum sit asperiores, molestiae quisquam ut impedit incidunt iste tempore!</p>
+                        <div>
+                            <h4>Servicio a domicilio</h4>
+                            <p>Simplifica tu vida y brinda comodidad a tus mascotas con nuestro servicio a domicilio. Ya sea que necesites entregas rápidas de productos esenciales o prefieras que nuestros profesionales cuiden de tus mascotas en la comodidad de tu hogar, estamos aquí para adaptarnos a tus necesidades. Ofrecemos la misma calidad de servicio y atención personalizada, ahora directamente en tu puerta.</p>
+                        </div>
                     </div>
-
                 </div>
 
                 <div className="imgDiv">
-                    <img src={img4}/>
+                    <img src={img4} alt="Servicios" />
                 </div>
             </div>
         </div>
