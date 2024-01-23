@@ -16,7 +16,7 @@ function Home() {
       <Navbar />
       <Carousel />
       <Informacion />
-      {/* <Info /> */}
+      <Info />
       {/* <Info1 /> */}
       {/* <Subscribe /> */}
       {/* <Footer /> */}
