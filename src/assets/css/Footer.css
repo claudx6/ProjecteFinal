@@ -42,7 +42,7 @@
   border: 1px solid var(--borderColor);
   box-shadow: var(--boxShadow);
   padding: 0.4rem;
-  color: var(--greyText);
+  color: var(--blackColor);
 }
 .footer .sectionContainer .footerLinks .icon:hover {
   background: var(--PrimaryColor);

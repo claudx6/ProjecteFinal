@@ -10,7 +10,6 @@ function Dropdown({ items }) {
       <ul
         className={dropdown ? "services-submenu clicked" : "services-submenu"}
         onClick={() => setDropdown(!dropdown)}
-
       >
         {items.map((item) => (
           <li key={item.id}>
