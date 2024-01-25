@@ -1,8 +1,11 @@
 .subscribe{
-    background: yellow;
+    background: gray;
+    height: 30vh;
+    
 
     .sectionContainer{
         text-align: center;
+        margin-top: -40px; // posicionar los elementos
         .inputDiv{
             margin-top: 1 rem;
             flex-direction: column;

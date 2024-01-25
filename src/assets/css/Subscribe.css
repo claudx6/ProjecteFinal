@@ -1,8 +1,10 @@
 .subscribe {
-  background: yellow;
+  background: gray;
+  height: 30vh;
 }
 .subscribe .sectionContainer {
   text-align: center;
+  margin-top: -40px;
 }
 .subscribe .sectionContainer .inputDiv {
   margin-top: 1 rem;

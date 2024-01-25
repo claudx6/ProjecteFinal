@@ -1,46 +1,17 @@
 .footer{
-    background: var(--SecondaryColor);
+    height: 200px;
+    background: #2196f3;
+
+    
     .sectionContainer{
-        gap: 2.5rem;
-
-        .gridOne{
-            gap: 1rem;
-            justify-content: center;
-            margin: auto;
-
-            .logoDiv{
-                .Logo{
-                    width:20%;
-                }
-            }
-
-            .socialIcon{
-                margin-top: 1rem;
-                gap: 1rem;
-
-                .icon{
-                    height: 50px;
-                    width: 30px;
-                    border-radius: 10rem;
-                    border: 1px solid var(--borderColor);
-                    box-shadow: var(--boxShadow);
-                    padding: .4rem;
-                    color: var(--greyText);
-
-                    &:hover{
-                        background: var(--PrimaryColor);
-                        transform: translateY(-7px);
-                        transition: var(--transition);
-                        border: 1px solid var(--PrimaryColor);
-                        color: var(--whiteColor);
-                    }
-                }
-            }
-
-        }
+        display: flex;
+        justify-content: space-between; // para dejar espacio horizontal entre las secciones
+        align-items: center; // para centrar el contenido
+        gap: 2.5rem;       
 
         .footerLinks{
             display: grid;
+            margin-top: 30px;
 
             .linkTitle{
                 color: var(--blackColor);
@@ -51,15 +22,37 @@
 
             li a{
                 display: block;
-                color: var(--greyText);
+                color: var(--blackColor);
                 transition: var(--transition);
                 padding: .3rem 0;
 
                 &:hover{
                     transform: translateX(7px);
                     color: var(--PrimaryColor);
-            
+                }
+            }
+            .textTitle{
+                gap: 1rem;
+                justify-content: center;
+                margin: auto;
+                margin-top: -50px;
+                font-size: 15px;
+            }
+            .icon{
+                height: 50px;
+                width: 30px;
+                border-radius: 10rem;
+                border: 1px solid var(--borderColor);
+                box-shadow: var(--boxShadow);
+                padding: .4rem;
+                color: var(--greyText);
 
+                &:hover{
+                    background: var(--PrimaryColor);
+                    transform: translateY(-7px);
+                    transition: var(--transition);
+                    border: 1px solid var(--PrimaryColor);
+                    color: var(--whiteColor);
                 }
             }
         }

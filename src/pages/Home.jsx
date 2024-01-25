@@ -18,8 +18,8 @@ function Home() {
       <Informacion />
       <Info />
       {/* <Info1 /> */}
-      {/* <Subscribe /> */}
-      {/* <Footer /> */}
+      <Subscribe />
+      <Footer />
     </div>
   );
 }
