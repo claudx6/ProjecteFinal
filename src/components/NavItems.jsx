@@ -46,21 +46,6 @@ export const navItems = [
     },
   ];
 
-  export const aboutUsDropdown = [
-    {
-      id: 1,
-      title: "Quiénes somos",
-      path: "./WhoAreWe",
-      cName: "submenu-item",
-    },
-    {
-      id: 2,
-      title: "Nuestra tienda",
-      path: "./OurShop",
-      cName: "submenu-item",
-    },
-  ];
-
   export const tiendaDropdown = [
     {
       id: 1,
@@ -98,5 +83,4 @@ export const navItems = [
       path: "./Reptiles",
       cName: "submenu-item",
     },
-
   ];

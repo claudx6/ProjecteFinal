@@ -3,14 +3,13 @@ import { Link } from "react-router-dom";
 import "/src/assets/css/Navbar.css";
 import "/src/index.css";
 
-import { navItems, serviceDropdown, tiendaDropdown, aboutUsDropdown } from "./NavItems";
+import { navItems, serviceDropdown, tiendaDropdown } from "./NavItems";
 import Button from "./Button";
 import Dropdown from "./Dropdown";
 
 function Navbar() {
   const [serviceDropdownOpen, setServiceDropdownOpen] = useState(false);
   const [tiendaDropdownOpen, setTiendaDropdownOpen] = useState(false);
-  const [aboutUsDropdownOpen, setaboutUsDropdownOpen] = useState(false);
 
 
   return (
@@ -45,20 +44,6 @@ function Navbar() {
                 >
                   <Link to={item.path}>{item.title}</Link>
                   {serviceDropdownOpen && <Dropdown items={serviceDropdown} />}
-                </li>
-              );
-            }
-
-            if (item.title === "Nosotros") {
-              return (
-                <li
-                  key={item.id}
-                  className={item.cName}
-                  onMouseEnter={() => setaboutUsDropdownOpen(true)}
-                  onMouseLeave={() => setaboutUsDropdownOpen(false)}
-                >
-                  <Link to={item.path}>{item.title}</Link>
-                  {aboutUsDropdownOpen && <Dropdown items={aboutUsDropdown} />}
                 </li>
               );
             }
