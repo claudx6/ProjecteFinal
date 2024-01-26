@@ -1,9 +1,28 @@
 import React from "react";
+import Navbar from '../components/Navbar.jsx';
+import Footer from "../components/Footer.jsx";
+import CarouselContacto from "../components/CarouselContacto.jsx";
+
+
 
 function Contactus() {
   return (
     <div>
-      <h1 className="contactus">Contacto</h1>
+      <Navbar />
+      <CarouselContacto />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Footer />
     </div>
   );
 }
