@@ -18,7 +18,7 @@ function ControlledCarousel() {
         src={img1}
         alt="First slide"
       />
-      <Carousel.Caption>
+      <Carousel.Caption style={{ position: 'absolute', top: '70%', left: '50%', transform: 'translateX(-50%)' }}>
         <h3>¡LO TENEMOS TODO!</h3>
         <p>Disponemos de una tienda equipada con todo lo que necesita tu mascota.</p>
       </Carousel.Caption>
@@ -42,7 +42,7 @@ function ControlledCarousel() {
         alt="Third slide"
       />
 
-      <Carousel.Caption>
+      <Carousel.Caption style={{ position: 'absolute', top: '80%', left: '50%', transform: 'translateX(-50%)' }}>
         {/* <h3>Third slide label</h3> */}
         <p>
           No te pierdas las novedades.

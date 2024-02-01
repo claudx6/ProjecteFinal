@@ -5,8 +5,8 @@ import './index.css'
 import 'swiper/css';
 
 // bootstrap css
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 
 // fonts and icons

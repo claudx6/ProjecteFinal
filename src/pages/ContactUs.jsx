@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from '../components/Navbar.jsx';
 import Footer from "../components/Footer.jsx";
 import CarouselContacto from "../components/CarouselContacto.jsx";
+import Location from "../components/Location.jsx";
+
 
 
 
@@ -11,17 +13,7 @@ function Contactus() {
       <Navbar />
       <CarouselContacto />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Location />
       <Footer />
     </div>
   );

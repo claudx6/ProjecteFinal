@@ -22,29 +22,49 @@
 }
 
 
-
 .image-slider {
   position: relative;
   height: 70vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .image-container {
   display: flex;
-  height: 100%;
+  transition: transform 1s ease-in-out;
 }
 
 .image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  flex: 0 0 100%;
   transition: opacity 1s ease-in-out;
+  opacity: 0;
 }
 
-.caption {
+.image.active {
+  opacity: 1;
+}
+
+.carousel-caption {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.carousel-caption h3 {
+  font-size: 40px;
+  padding: 10px; /* Espaciado interno para mayor legibilidad */
+  color: #fff;
+  font-style: italic;
+  font-family: 'Loved by the King';
+  text-shadow: -1px -1px 1px #000,  
+                1px -1px 1px #000,
+               -1px  1px 1px #000,
+                1px  1px 1px #000;
 }
