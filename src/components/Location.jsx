@@ -6,6 +6,7 @@ import '/src/index.css';
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 
 
 const Location = () => {
@@ -17,7 +18,6 @@ const Location = () => {
             <br />
 
             <div className='location-layout'>
-
             <div className='location-section'>
                 <div className='shop-heading'>
                     <h1><span>Petit Amazones</span></h1>
@@ -27,6 +27,9 @@ const Location = () => {
 
                     <h3 className='ven-h'><FaLocationDot />&nbsp;&nbsp;&nbsp;Dirección</h3>
                     <h4 className='adress'>Plaça Ramon i Cajal, local 4, El Masnou (08320), Barcelona</h4>
+
+                    <h3 className='email-h'><MdEmail />&nbsp;&nbsp;&nbsp;Correo electrónico</h3>
+                    <h4 className='email'>info@petitamazones.es</h4>
 
                     <h3 className='phone-n'><BsFillTelephoneFill />&nbsp;&nbsp;&nbsp;Número de teléfono</h3>
                     <h4 className='phone'>607 45 69 97</h4>
