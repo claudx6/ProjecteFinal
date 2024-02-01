@@ -18,15 +18,15 @@ const Footer = () => {
             <div className="footerLinks">
                 <span className="linkTitle">Contáctenos</span>
                 <li>
-                    <p>C/ Roger de Flor 45-51  08013 Barcelona</p>
+                    <p>Plaça Ramon i Cajal, local 4, El Masnou (08320), Barcelona</p>
                 </li>
 
                 <li>
-                    <p>Tel: 933 095 977 </p>
+                    <p>Telf: 607 45 69 97 </p>
                 </li>
 
                 <li>
-                    <p>amazones@amazones.es</p>
+                    <p>info@petitamazones.es</p>
                 </li>
                
             </div>
