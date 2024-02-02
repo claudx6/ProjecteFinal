@@ -1,11 +1,10 @@
 import React from 'react';
 import "/src/assets/css/Footer.css";
 
-// import Logo from '../assets/images/carousel/Logo.jpg';
-import { TiSocialFacebook } from "react-icons/ti";
-import { TiSocialTwitter } from "react-icons/ti";
-import { TiSocialYoutube } from "react-icons/ti";
-import { FaPinterestP } from "react-icons/fa";
+// iconos
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 
 const Footer = () => {
@@ -16,7 +15,7 @@ const Footer = () => {
         
 
             <div className="footerLinks">
-                <span className="linkTitle">Contáctenos</span>
+                <span className="linkTitle">CONTÁCTENOS</span>
                 <li>
                     <p>Plaça Ramon i Cajal, local 4, El Masnou (08320), Barcelona</p>
                 </li>
@@ -32,27 +31,39 @@ const Footer = () => {
             </div>
 
             <div className="footerLinks">
-                <span className="linkTitle">Informacion</span>
+                <span className="linkTitle">INFORMACIÓN</span>
                 <li>
-                    <a href="">asdada</a>
+                    <a href="">Formas de pago y envíos</a>
                 </li>
                 <li>
-                    <a href="">Inicio</a>
+                    <a href="">Cambios y devoluciones</a>
                 </li>
                 <li>
-                    <a href="">Inicio</a>
+                    <a href="">Preguntas frecuentes</a>
+                </li>
+                
+            </div>
+
+            <div className="footerLinks">
+                <span className="linkTitle">CONDICIONES</span>
+                <li>
+                    <a href="">Aviso legal</a>
+                </li>
+                <li>
+                    <a href="">Politica de privacidad</a>
+                </li>
+                <li>
+                    <a href="">Politica de cookies</a>
                 </li>
                 
             </div>
 
             <div className="footerLinks">
                   
-                <p className='textTitle'>Redes sociales</p>
+                <p className='textTitle'>REDES SOCIALES</p>
                 <div className="socialIcon flex">
-                <TiSocialFacebook className='icon'/>
-                <TiSocialTwitter className='icon'/>
-                <TiSocialYoutube className='icon'/>
-                <FaPinterestP className='icon'/>
+                <FontAwesomeIcon icon={faFacebook} className='icon'/>
+                <FontAwesomeIcon icon={faInstagram} className='icon' />
                 </div>
             </div>
 
@@ -66,60 +77,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
-
-
-// import React from 'react';
-// import '/src/assets/css/Footer.css';
-
-// import { TiSocialFacebook } from 'react-icons/ti';
-// import { TiSocialTwitter } from 'react-icons/ti';
-// import { TiSocialYoutube } from 'react-icons/ti';
-// import { FaPinterestP } from 'react-icons/fa';
-
-// const Footer = () => {
-//   return (
-//     <div className='footer'>
-//       <div className='sectionContainer container flex'>
-//         {/* Column 1 */}
-//         <div className='footerLinks'>
-//           <span className='linkTitle'>Informacion</span>
-//           <li>
-//             <a href=''>Inicio</a>
-//           </li>
-//           {/* Add more links as needed */}
-//         </div>
-
-//         {/* Column 2 */}
-//         <div className='gridOne'>
-//           <div className='logoDiv'>{/* <img src={Logo} className='Logo' /> */}</div>
-//           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit!</p>
-//           <div className='socialIcon flex'>
-//             <TiSocialFacebook className='icon' />
-//             <TiSocialTwitter className='icon' />
-//             <TiSocialYoutube className='icon' />
-//             <FaPinterestP className='icon' />
-//           </div>
-//         </div>
-
-//         {/* Additional Content */}
-//         <div className='additionalContent'>
-//           {/* Add your additional content here */}
-//         </div>
-//       </div>
-
-//       {/* Footer Bottom */}
-//       <div className='copyRightDiv flex'>
-//         <p>
-//           Courtesy Design | Developed by{' '}
-//           <a href='https://emailto-isratech8@outlook.com' target='_blank'>
-//             Amazones
-//           </a>
-//         </p>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Footer;
-
+export default Footer;
