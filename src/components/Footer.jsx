@@ -70,7 +70,7 @@ const Footer = () => {
             </div>
 
         <div className="copyRightDiv flex">
-            <p>© 2024 Amazones. Todos los derechos reservados</p>
+            <p>© 2024 Petit Amazones. Todos los derechos reservados</p>
         </div>
         
         </div>
