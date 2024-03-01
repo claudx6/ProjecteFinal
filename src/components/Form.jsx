@@ -28,7 +28,7 @@ function Form() {
                             type="text" 
                             className="form-control"
                             name="name"
-                            placeholder="Name"
+                            placeholder="Nombre"
                             onChange={handleInputChange}
                             />
                           </div>
@@ -61,13 +61,39 @@ function Form() {
                             type="text" 
                             className="form-control"
                             name="message"
-                            placeholder="Message"
+                            placeholder="Mensaje"
                             onChange={handleInputChange}
                             ></textarea> 
                           </div>
                         </div>
+                        <div className="col-md-12">
+                          <div className="form-group">
+                            <input type="submit" value="Send Message" className="btn btn-primary"/>
+                          </div>
+                        </div>
                       </div>
                     </form>
+                  </div>
+                </div>
+                <div className="col-md-6 d-flex align-items-stretch">
+                  <div className="info-wrap w-100 p-lg-5 p-4 img">
+                    <h3>Ponte en contacto con nosotros</h3>
+                    <div className="mb-4">Con mucho gusto te ayudaremos.</div>
+                    <div className="logo-container">
+                    <img src="/../src/assets/images/logo/logo.jpg" alt="" />
+                    </div>
+                    <div className="dbox w-100 d-flex align-items-start">
+                      <div className="icon d-flex align-items-center justify-content-center">
+                        <span className="fa fa-map-marker"></span>
+                      </div>
+                      {/* <div className="text pl-3">
+                        <p>
+                          <span></span>
+                        </p>
+                      </div> */}
+                      
+                      
+                    </div>
                   </div>
                 </div>
               </div>
@@ -81,3 +107,5 @@ function Form() {
 
 export default Form;
 
+
+// https://www.youtube.com/watch?v=SMYsxHwsExQ
