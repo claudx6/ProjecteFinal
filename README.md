@@ -13,3 +13,4 @@ Currently, two official plugins are available:
 
 <!-- librerias para instalar -->
 <!-- npm install --save @fortawesome/free-brands-svg-icons -->
+<!-- npm install react-toastify  -->

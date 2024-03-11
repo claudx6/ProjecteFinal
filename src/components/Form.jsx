@@ -1,18 +1,40 @@
-import React from "react";
+import React, {useState} from "react";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import { Link } from "react-router-dom";
+// import firebase from "/src/firebase.js";
+
 import "/src/assets/css/Form.css";
 
 function Form() {
+  const [state, setState] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
 
-  const handleSubmit = () => {
-
+  const {name, email, subject, message} = state;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if(!name || !email || !subject || !message) {
+      toast.error("Por favor introduce un valor para cada casilla.")
+    } else {
+      firebase.child("contacts").push(state);
+      setState({name: "", email: "", subject: "", message: ""});
+      toast.success("Tu mensaje ha sido enviado correctamente.");
+    }
   }
 
-  const handleInputChange = () => {}
+  const handleInputChange = (e) => {
+    let {name, value} = e.target;
+    setState({...state, [name]: value})
+  }
 
   return (
     <section className="contact-section">
       <div className="container">
+        <ToastContainer position="top-center"/>
         <div className="row justify-content-center">
           <div className="col-md-10">
             <div className="wrapper">
@@ -30,6 +52,7 @@ function Form() {
                             name="name"
                             placeholder="Nombre"
                             onChange={handleInputChange}
+                            value={name}
                             />
                           </div>
                         </div>
@@ -41,6 +64,7 @@ function Form() {
                             name="email"
                             placeholder="Email"
                             onChange={handleInputChange}
+                            value={email}
                             />
                           </div>
                         </div>
@@ -52,6 +76,7 @@ function Form() {
                             name="subject"
                             placeholder="Sujeto"
                             onChange={handleInputChange}
+                            value={subject}
                             />
                           </div>
                         </div>
@@ -63,6 +88,7 @@ function Form() {
                             name="message"
                             placeholder="Mensaje"
                             onChange={handleInputChange}
+                            value={message}
                             ></textarea> 
                           </div>
                         </div>
@@ -86,11 +112,11 @@ function Form() {
                       <div className="icon d-flex align-items-center justify-content-center">
                         <span className="fa fa-map-marker"></span>
                       </div>
-                      {/* <div className="text pl-3">
+                      <div className="text pl-3">
                         <p>
                           <span></span>
                         </p>
-                      </div> */}
+                      </div>
                       
                       
                     </div>

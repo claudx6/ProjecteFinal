@@ -60,24 +60,4 @@
   padding: 6px 6px;
   background-color: #dedede;
   border-radius: 50%;
-}
-
-ul.team-icon {
-  margin-top: 25px;
-}
-
-ul.team-icon li {
-  display: inline-block;
-  margin: 0 3px;
-  transition: all 0.25s ease-in-out;
-}
-
-ul.team-icon li a {
-  margin: 0;
-  display: inline-block;
-  padding: 8px 8px;
-  width: 34px;
-  height: 34px;
-  font-size: 18px;
-  line-height: 18px;
 }/*# sourceMappingURL=TeamCard.css.map */

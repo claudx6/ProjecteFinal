@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "/src/assets/css/TeamCard.css";
+import img1 from '../assets/images/tienda/image18.jpg';
+
 
 
 
@@ -19,32 +21,14 @@ function TeamCard() {
 
             <div className="col-sm-6 col-md-4">
                 <div className="team-item">
-                    <img src="/src/images/team/jose_card.jpg" className="team-img" alt="pic" />
+                    <img src={img1} className="team-img" alt="pic" />
                     <h3>LAURA</h3>
-                    <p>Laura es la fundadora y...</p>
-
-                    <ul className="team-icon">
-
-                        <li><a href="#" className="twitter">
-                            <i className="fa fa-twitter"></i>
-                        </a></li>
-
-                        <li><a href="#" className="twitter">
-                            <i className="fa fa-twitter"></i>
-                        </a></li>
-
-                        <li><a href="#" className="twitter">
-                            <i className="fa fa-twitter"></i>
-                        </a></li>
-
-                    </ul>
-                    
+                    <div class="team-info"><p>Jefa</p>
+                    <p>Laura es la fundadora de Petit Amazones y...</p>
+                    </div>
                 </div>
-
             </div>
-
         </div>
-
     </div>
     </section>
    
