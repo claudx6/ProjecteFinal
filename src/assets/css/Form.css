@@ -11,10 +11,10 @@
 }
 
 .contact-wrap {
-  background: rgb(127, 39, 156);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(127, 39, 156)), color-stop(100%, rgb(46, 39, 157)));
-  background: linear-gradient(135deg, rgb(127, 39, 156) 0%, rgb(46, 39, 157) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#7f279c", endColorstr="#2e279d", GradientType=1 );
+  background: rgb(47, 155, 244); /* Cambiar el color de fondo a azul */
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(47, 155, 244)), color-stop(100%, rgb(46, 39, 157)));
+  background: linear-gradient(135deg, rgb(47, 155, 244) 0%, rgb(46, 39, 157) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#2f9bf4", endColorstr="#2e279d", GradientType=1 );
 }
 .contact-wrap h3 {
   color: #fff;
@@ -84,9 +84,13 @@ textarea.form-control {
 }
 
 .btn-primary {
-  background: #d62196 !important;
-  border-color: #d62196 !important;
+  background: rgb(0, 212, 212) !important;
+  border-color: rgba(0, 212, 212, 0.875) !important;
   color: #fff;
+}
+
+.btn-primary:hover {
+  color: black !important; /* Cambiar el color del texto a negro */
 }
 
 .info-wrap h3 {
@@ -99,7 +103,7 @@ textarea.form-control {
   left: 0;
   width: 60px;
   height: 3px;
-  background: #d62196;
+  background: #216cd6;
   content: "";
 }
 .info-wrap .dbox {

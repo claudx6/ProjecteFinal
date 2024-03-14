@@ -94,7 +94,7 @@ function Form() {
                         </div>
                         <div className="col-md-12">
                           <div className="form-group">
-                            <input type="submit" value="Send Message" className="btn btn-primary"/>
+                            <input type="submit" value="Enviar" className="btn btn-primary"/>
                           </div>
                         </div>
                       </div>
@@ -132,6 +132,3 @@ function Form() {
 }
 
 export default Form;
-
-
-// https://www.youtube.com/watch?v=SMYsxHwsExQ
