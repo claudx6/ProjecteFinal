@@ -3,6 +3,13 @@
   padding: 70px 0;
 }
 
+.team-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Esto centra la tarjeta verticalmente en toda la pantalla */
+}
+
 .team-item {
   background: #f4f5f6;
   text-align: center;
@@ -46,7 +53,7 @@
 
 .team-info::after {
   background: #008aff;
-  background: linear-gradient(135deg, #6B02FF 0%, #985BEF 100%);
+  background: linear-gradient(135deg, #6b02ff 0%, #985bef 100%);
   display: inline-block;
   vertical-align: middle;
   content: "";
