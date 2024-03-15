@@ -3,11 +3,29 @@
   padding: 70px 0;
 }
 
+.circle-background {
+  position: absolute;
+  top: 104px;
+  left: -950px;
+  transform: translateY(-50%) rotate(180deg);
+  -webkit-clip-path: inset(0 0 21% 0);
+          clip-path: inset(0 0 21% 0);
+}
+
+.circle2-background {
+  position: absolute;
+  top: 705px;
+  left: 680px;
+  transform: translateY(-50%);
+  -webkit-clip-path: inset(0 0 43% 0);
+          clip-path: inset(0 0 43% 0);
+}
+
 .team-container {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  height: 100vh; /* Esto centra la tarjeta verticalmente en toda la pantalla */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .team-item {
