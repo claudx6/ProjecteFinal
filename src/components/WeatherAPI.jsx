@@ -48,7 +48,7 @@ function WeatherAPI() {
             src={`http://openweathermap.org/img/w/${weather?.weather[0]?.icon}.png`}
             alt={weather?.weather[0]?.description}
           />
-          <p className="temperature">{weather?.main?.temp}°C</p>
+          <p className="temperature">{(weather?.main?.temp- 273.15).toFixed(1)}°C</p>
           <p className="weather-description">{weather?.weather[0]?.description}</p>
           <p className="humidity">Humidity: {weather?.main?.humidity}%</p>
         </div>

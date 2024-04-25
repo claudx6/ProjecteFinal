@@ -29,16 +29,16 @@ export default function CheckoutForm() {
     stripe.retrievePaymentIntent(clientSecret).then(({ paymentIntent }) => {
       switch (paymentIntent.status) {
         case "succeeded":
-          setMessage("Payment succeeded!");
+          setMessage("El pago se realizó correctamente!");
           break;
         case "processing":
-          setMessage("Your payment is processing.");
+          setMessage("Su pago se está procesando.");
           break;
         case "requires_payment_method":
-          setMessage("Your payment was not successful, please try again.");
+          setMessage("No se ha realizado el pago, por favor intente nuevamente.");
           break;
         default:
-          setMessage("Something went wrong.");
+          setMessage("Error, algo salió mal.");
           break;
       }
     });
@@ -48,8 +48,7 @@ export default function CheckoutForm() {
     e.preventDefault();
 
     if (!stripe || !elements) {
-      // Stripe.js hasn't yet loaded.
-      // Make sure to disable form submission until Stripe.js has loaded.
+      // Stripe.js aún no se ha cargado.
       return;
     }
 
@@ -63,11 +62,7 @@ export default function CheckoutForm() {
       },
     });
 
-    // This point will only be reached if there is an immediate error when
-    // confirming the payment. Otherwise, your customer will be redirected to
-    // your `return_url`. For some payment methods like iDEAL, your customer will
-    // be redirected to an intermediate site first to authorize the payment, then
-    // redirected to the `return_url`.
+    // Este punto  se llevará a cabo si hay un error inmediato al confirmar el pago
     if (error.type === "card_error" || error.type === "validation_error") {
       setMessage(error.message);
     } else {
@@ -90,7 +85,7 @@ export default function CheckoutForm() {
           {isLoading ? <div className="spinner" id="spinner"></div> : "Pay now"}
         </span>
       </button>
-      {/* Show any error or success messages */}
+      {/* Muestra cualquier mensaje de error o éxito */}
       {message && <div id="payment-message">{message}</div>}
     </form>
   );
