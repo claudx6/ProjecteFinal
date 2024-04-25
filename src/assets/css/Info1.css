@@ -1,0 +1,25 @@
+.info1 {
+    gap: 1.5rem;
+    background-color: red;
+}
+
+.info1 .imgDiv {
+    margin: auto;
+    img {
+        width: 100%;
+        max-width: 430px;
+    }
+}
+
+.sectionContainer .grids {
+    margin-top: 1rem;
+    gap: 1.5rem;
+    color: aqua;
+}
+
+.grids .singleGrid .gridTitle {
+    display: block;
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+    color: black;
+}

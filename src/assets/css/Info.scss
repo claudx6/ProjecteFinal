@@ -1,0 +1,73 @@
+.info{
+    background: var(--SecondaryColor);
+    height: 80vh;
+    width: 100%;
+    padding: 30px;
+    .infoContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 200px;
+        .titleDiv{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            gap: 1.5rem;
+        }
+
+        .cardsDiv{
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            padding: 40px;
+
+            .singleCard{
+                background: var(--blueColor);
+                padding: 3rem 2rem;
+                border-radius: 10rem;
+                gap: 1rem;
+                text-align: center;
+                margin: auto;
+                height: 320px;
+                width: 90%;
+                max-width: 250px;
+                
+                flex: 1;
+
+                .iconDiv{
+                    justify-content: center;
+                    margin: auto;
+                    background: var(--PrimaryColor);
+                    width: 50px;
+                    height: 55px;
+                    padding: 1 rem;
+                    border-radius: 3rem;
+
+                    .icon{
+                        color: var(--whiteColor);
+                    }
+                }
+
+                .cardTitle{
+                    color: var(--blackColor);
+                    font-weight: 700;
+                }
+
+                .colorOne{
+                    background: var(--colorThree);
+                }
+
+                .colorTwo{
+                    background: var(--colorThree);
+                }
+                .colorThree{
+                    background: var(--colorThree);
+                }
+            }
+
+        }
+    }
+
+}

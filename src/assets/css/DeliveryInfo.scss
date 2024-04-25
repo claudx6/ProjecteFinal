@@ -1,0 +1,37 @@
+.delivery-info-section {
+    background-color: #fff;
+    padding: 50px 100px;
+  
+    .yellow-rectangle {
+      background-color: yellow;
+      width: 60%;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 100px;
+      margin-top: -100px;
+  
+      p {
+        margin: 0;
+        font-size: 25px;
+        color: black;
+      }
+    }
+  
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: -10px;
+  
+      img {
+        width: calc(35% - 10px);
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  

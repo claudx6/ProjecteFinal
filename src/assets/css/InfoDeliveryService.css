@@ -1,0 +1,83 @@
+.delivery-section-white {
+  background: #fff;
+  padding: 70px 0;
+  margin-top: -100px;
+}
+.delivery-section-white .delivery-services {
+  margin: 4rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.delivery-section-white .delivery-services h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+.delivery-section-white .delivery-services p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: black;
+  text-shadow: none;
+}
+.delivery-section-white .delivery-services .delivery-service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+.delivery-section-white .delivery-services .delivery-service .delivery-text {
+  width: 45%;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.delivery-section-white .delivery-services .delivery-service .delivery-text h2 {
+  padding-bottom: 1rem;
+}
+.delivery-section-white .delivery-services .delivery-service .delivery-text p {
+  text-align: justify;
+}
+.delivery-section-white .delivery-services .delivery-service .del-photos {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.delivery-section-white .delivery-services .delivery-service .del-photos img {
+  width: 49%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+.delivery-section-white .delivery-services .delivery-service .del-photos img:nth-child(2) {
+  position: absolute;
+  top: -10%;
+  right: 0;
+}
+@media screen and (max-width: 850px) {
+  .delivery-section-white .delivery-services .destination {
+    margin: 4rem 2rem;
+  }
+  .delivery-section-white .delivery-services .delivery-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4.5rem;
+    justify-content: space-between;
+  }
+  .delivery-section-white .delivery-services .delivery-service .delivery-text {
+    width: 100%;
+  }
+  .delivery-section-white .delivery-services .delivery-service .del-photos {
+    width: 100%;
+    margin: 1.8rem 0;
+  }
+  .delivery-section-white .delivery-services .delivery-service .del-photos img {
+    height: 250px;
+  }
+}/*# sourceMappingURL=InfoDeliveryService.css.map */

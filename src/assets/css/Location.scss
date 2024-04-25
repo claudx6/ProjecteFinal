@@ -1,0 +1,66 @@
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  
+    .venue-heading {
+      text-align: center;
+      
+      h1 {
+        font-size: 30px;
+      }
+    }
+  
+    .location-layout {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin-top: 30px;
+  
+      .location-section {
+        width: 60%;
+        
+        .shop-heading {
+            
+            h1 {
+                font-size: 28px;
+              }
+      
+              h2 {
+                font-size: 24px;
+              }
+      
+              h3 {
+                font-size: 20px;
+                svg {
+                    color: red;
+                  }
+              }
+      
+              h4 {
+                font-size: 16px;
+              }
+        }
+      }
+  
+      .map-section {
+        // width: 40%;
+  
+        .map-frame {
+          border-radius: 10px;
+          overflow: hidden;
+  
+          #map_canvas {
+            height: 450px;
+            width: 600px;
+            border-radius: 5px;
+            margin-left: auto;
+          }
+        }  
+      }
+    }
+  }
+  

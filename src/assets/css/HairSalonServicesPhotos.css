@@ -1,0 +1,43 @@
+.services {
+  margin: -100px auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.services .service {
+  flex-basis: 31%;
+  position: relative;
+}
+.services .service img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.services .service .caption {
+  border-radius: 10px;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: rgba(0, 15, 152, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  padding: 20px;
+  transition: 0.4s;
+  height: 100%;
+  width: 100%;
+}
+.services .service .caption img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+.services .service:hover .caption {
+  opacity: 1;
+  padding-top: 0;
+}/*# sourceMappingURL=HairSalonServicesPhotos.css.map */

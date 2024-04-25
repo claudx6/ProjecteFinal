@@ -1,0 +1,75 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #72D3FE;
+}
+
+.information {
+  color: black;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #72D3FE;
+  height: 120vh;
+  width: 100%;
+}
+.information .informationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  margin: 30px;
+  margin-top: -40px;
+}
+.information .informationContainer .titlesDiv {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.information .informationContainer .titlesDiv small {
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: var(--blackColor);
+  line-height: 1.5rem;
+}
+.information .informationContainer .infoDiv {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.information .informationContainer .infoDiv .textDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.information .informationContainer .infoDiv .textDiv .singleInfo .number {
+  background: var(--PrimaryColor);
+  padding: 5px 12px;
+  width: 40px;
+  border-radius: 3rem;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--whiteColor);
+}
+.information .informationContainer .infoDiv .textDiv .singleInfo .colorOne {
+  background: var(--HoverColor);
+}
+.information .informationContainer .infoDiv .textDiv .singleInfo .colorTwo {
+  background: var(--HoverColor);
+}
+.information .informationContainer .infoDiv .textDiv .singleInfo .colorThree {
+  background: var(--HoverColor);
+}
+.information .informationContainer .infoDiv .imgDiv {
+  flex: -20;
+}
+.information .informationContainer .infoDiv .imgDiv img {
+  width: 100%;
+  max-width: 2000px;
+}/*# sourceMappingURL=Informacion.css.map */

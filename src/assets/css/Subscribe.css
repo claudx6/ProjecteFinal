@@ -1,0 +1,27 @@
+.subscribe {
+  background: gray;
+  height: 40vh;
+}
+.subscribe .sectionContainer {
+  text-align: center;
+  margin-top: -40px;
+}
+.subscribe .sectionContainer .inputDiv {
+  margin-top: 1 rem;
+  flex-direction: column;
+  background: white;
+  border-radius: 1rem;
+}
+.subscribe .sectionContainer .inputDiv input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem 0.5rem;
+}
+.subscribe .sectionContainer .inputDiv input:placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+}
+.subscribe .sectionContainer .inputDiv .btn {
+  width: 100%;
+}/*# sourceMappingURL=Subscribe.css.map */

@@ -1,0 +1,61 @@
+.footer {
+  background: #2196f3;
+}
+.footer .sectionContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 2.5rem;
+}
+.footer .footerLinks {
+  flex: 1;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+.footer .footerLinks .linkTitle {
+  color: var(--blackColor);
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+.footer .footerLinks li a {
+  color: var(--blackColor);
+  transition: transform 0.3s;
+  display: block;
+  padding: 0.3rem 0;
+}
+.footer .footerLinks li a:hover {
+  transform: translateX(7px);
+  color: var(--PrimaryColor);
+}
+.footer .footerLinks .textTitle {
+  font-size: 15px;
+  margin-top: 0;
+}
+.footer .footerLinks .icon {
+  height: 35px;
+  width: 35px;
+  border-radius: 10rem;
+  border: 1px solid var(--borderColor);
+  box-shadow: var(--boxShadow);
+  color: var(--blackColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+  transition: transform 0.3s;
+}
+.footer .footerLinks .icon:hover {
+  background: var(--PrimaryColor);
+  transform: translateY(-7px);
+  border: 1px solid var(--PrimaryColor);
+  color: var(--whiteColor);
+}
+.footer .copyRightDiv {
+  justify-content: center;
+  padding: 1rem;
+  gap: 2rem;
+  border-top: 1px solid var(--greyText);
+  text-align: center;
+}/*# sourceMappingURL=Footer.css.map */

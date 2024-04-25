@@ -1,0 +1,48 @@
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.location .venue-heading {
+  text-align: center;
+}
+.location .venue-heading h1 {
+  font-size: 30px;
+}
+.location .location-layout {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+.location .location-layout .location-section {
+  width: 60%;
+}
+.location .location-layout .location-section .shop-heading h1 {
+  font-size: 28px;
+}
+.location .location-layout .location-section .shop-heading h2 {
+  font-size: 24px;
+}
+.location .location-layout .location-section .shop-heading h3 {
+  font-size: 20px;
+}
+.location .location-layout .location-section .shop-heading h3 svg {
+  color: red;
+}
+.location .location-layout .location-section .shop-heading h4 {
+  font-size: 16px;
+}
+.location .location-layout .map-section .map-frame {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.location .location-layout .map-section .map-frame #map_canvas {
+  height: 450px;
+  width: 600px;
+  border-radius: 5px;
+  margin-left: auto;
+}/*# sourceMappingURL=Location.css.map */

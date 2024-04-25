@@ -1,0 +1,75 @@
+.top {
+  background: #f8f8f8;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.top .top_container {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top .top_list {
+  display: flex;
+  gap: 15px;
+}
+.top .top_list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: #707070;
+  cursor: pointer;
+}
+.top .top_list li .flex {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.top .top_list li .flex svg {
+  transform: scale(1.2);
+  margin-right: 3px;
+}
+.top .top_list li img {
+  width: 28px;
+  height: 28px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.top .top_list li svg {
+  width: 20px;
+  height: 20px;
+  fill: #ccc;
+}
+.top .top_list li span {
+  font-size: 12px;
+}
+.top .top_list li::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20px;
+  background: #ccc;
+}
+.top .top_list li:last-of-type::after {
+  display: none;
+}
+.top .top_list li:hover span {
+  color: #000;
+}
+.top .top_list li:hover svg {
+  fill: #666;
+}
+@media (max-width: 670px) {
+  .top .top_list li:nth-of-type(2), .top .top_list li:nth-of-type(3), .top .top_list li:nth-of-type(4) {
+    display: none;
+  }
+}/*# sourceMappingURL=TopShop.css.map */

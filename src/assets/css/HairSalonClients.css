@@ -1,0 +1,15 @@
+.clients {
+  margin: 20px auto;
+  width: 90%;
+  text-align: center;
+}
+.clients .gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.clients .gallery img {
+  width: 23%;
+  border-radius: 10px;
+}/*# sourceMappingURL=HairSalonClients.css.map */

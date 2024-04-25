@@ -1,0 +1,39 @@
+@charset "UTF-8";
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgb(106, 17, 203), rgb(37, 117, 252));
+}
+
+.payment-methods-container {
+  display: flex; /* Establece el diseño en línea */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.payment-methods-container .me-2 {
+  margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+.blue-button {
+  background-color: rgba(0, 212, 212, 0.875);
+  color: white;
+  border-width: 1px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+  position: relative;
+  margin-top: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.blue-button:hover {
+  color: black;
+}
+
+input[type=number] {
+  color: black !important;
+}/*# sourceMappingURL=ShoppingCartPage.css.map */

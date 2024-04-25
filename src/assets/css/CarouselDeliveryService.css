@@ -1,0 +1,64 @@
+.carousel-indicators [data-bs-target] {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+  color: #fff;
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
+}
+
+.carousel-caption h3 {
+  font-size: 25px;
+}
+
+.carousel-caption p {
+  font-size: 20px;
+}
+
+.image-slider {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex: 0 0 100%;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.image.active {
+  opacity: 1;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.carousel-caption h3 {
+  font-size: 40px;
+  padding: 10px;
+  color: #fff;
+  font-style: italic;
+  font-family: "Loved by the King";
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
+}/*# sourceMappingURL=CarouselDeliveryService.css.map */
