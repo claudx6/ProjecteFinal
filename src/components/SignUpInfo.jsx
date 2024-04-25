@@ -87,6 +87,8 @@ function SignUp() {
           <Box
             sx={{
               width: '140%',
+              maxWidth: '650px',
+              margin: '0 auto',
               backgroundColor: 'rgba(255, 255, 255, 0.7)', // fondo semi-transparente del formulario
               p: 4, // relleno interno al contenedor del formulario
               borderRadius: 8,
