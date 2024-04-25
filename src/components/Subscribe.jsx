@@ -11,12 +11,12 @@ const Subscribe = () => {
                 toast.error('Email is required!');
                 return;
             }
-            // Regular expression for validating email addresses
+            // Expresión regular para validar el mail
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             
             if (!emailRegex.test(email)) {
                 toast.error('Invalid email format!');
-                return; // Stop further execution if email format is invalid
+                return; // Detención si el mail no es válido
             }
             const response = await subscribe({email: email});
             if(response.data.status) {
