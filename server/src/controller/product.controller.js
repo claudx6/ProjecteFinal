@@ -1,8 +1,7 @@
-
 // model
 const product = require("../model/products.model");
 
-// get products
+// productos
 const getProducts = async (req,res) => {
   try {
     const {category_type,type,sortBy} = req.body;
