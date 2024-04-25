@@ -30,7 +30,7 @@ mongoDB().then(()=>{
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
 
-app.get("/v1/healthCheck",(req,res)=>{
+app.get("/v1/check",(req,res)=>{
     return res.send({
         status : true,
         message : 'server is running fine'
