@@ -43,7 +43,7 @@ const styles = {
 const PaymentStatus = () => {
   const stripe = useStripe();
   const [message, setMessage] = useState('pending');
-  const [text, setText] = useState('Payment Processing...');
+  const [text, setText] = useState('Pago procesando...');
   useEffect(() => {
     if (!stripe) {
       return;
