@@ -16,9 +16,9 @@ const Info = () => {
 
                 <div className="titleDiv flex">
                     <h2>Ofertas exclusivas para clientes</h2>
-                    <button className='btn'>
+                    {/* <button className='btn'>
                         Mirar
-                    </button>
+                    </button> */}
                 </div>
 
                 <div className="cardsDiv grid">
