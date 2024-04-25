@@ -6,7 +6,7 @@ const newslater = require("../model/subsrice.model");
 const { default: axios } = require("axios");
 const { findOne } = require("../model/products.model");
 
-// user login
+// usuario login
 
 const auth = async (req,res) => {
   try {
@@ -18,12 +18,12 @@ const auth = async (req,res) => {
           if (!result) {
             return res.status(403).send({
               status: false,
-              message: "Your password is incorrect.",
+              message: "La contraseña es incorrecta.",
             });
           }
           return res.send({
             status : true,
-            message : 'User verified successfully.',
+            message : 'Usuario verificado con éxito.',
             data : userRes,
           })
           }).catch((err)=>{
@@ -32,7 +32,7 @@ const auth = async (req,res) => {
       } else {
         return res.status(403).send({
           status: false,
-          message: "Your email is incorrect.",
+          message: "El email es incorrecto.",
         });
       }
     }).catch((err)=>{
@@ -50,7 +50,7 @@ const register = async (req,res) => {
     if(isUser) {
       return res.send({
         status : false,
-        message : 'User already exist with this email.'
+        message : 'Ya existe un usuario con este email.'
       })
     } else {
       const hashedPassword = await bcrypt.hash(password, 10);
@@ -64,7 +64,7 @@ const register = async (req,res) => {
       if(isUserSaved) {
         return res.send({
           status : true,
-          message : 'User register successfully.',
+          message : 'Usuario registrado correctamente.',
           data : isUserSaved
         })
       }
@@ -72,7 +72,7 @@ const register = async (req,res) => {
   } catch (error) {
     res.status(200).send({
       status: false,
-      message: 'Sorry, something went wrong. Please try again later.'
+      message: 'Error, algo ha ido mal. Por favor, vuelve a probar.'
     })
   }
 }
@@ -83,18 +83,18 @@ const contactUs = async (req,res) => {
     if(contact){
       res.status(200).send({
         status: true,
-        message: 'Your message has been successfully sent. We will get back to you soon.'
+        message: 'Tu mensaje ha sido correctamente enviado. Nos pondremos en contacto con usted.'
       })
     } else {
       res.status(200).send({
         status: false,
-        message: 'Sorry, something went wrong. Please try again later.'
+        message: 'Error, algo ha ido mal. Por favor, vuelve a probar.'
       })
     }
   } catch (error) {
     res.status(200).send({
       status: false,
-      message: 'Sorry, something went wrong. Please try again later.'
+      message: 'Error, algo ha ido mal. Por favor, vuelve a probar.'
     })
   }
 }
@@ -110,13 +110,13 @@ const getWeatherByCity = async (req,res) => {
     } else {
       return res.send({
         status : false,
-        message : 'city not found'
+        message : 'ciudad no encontrada'
       })
     }
   } catch (error) {
     res.status(200).send({
       status: false,
-      message: 'Sorry, something went wrong. Please try again later.'
+      message: 'Error, algo ha ido mal. Por favor, vuelve a probar.'
     })
   }
 }
@@ -128,7 +128,7 @@ const subscribe = async (req,res) => {
     if(isExist) {
       return res.send({
         status :false,
-        message: 'Your Already subscribe our newslatter',
+        message: 'Ya estás subscrito a nuestra newsletter',
         data : isExist
       })
     } else {
@@ -136,7 +136,7 @@ const subscribe = async (req,res) => {
       if(response) {
         return res.send({
           status :true,
-          message: 'Thankyou! you will receive the latest news',
+          message: '¡Gracias! Recibirás las últimas novedades próximamente.',
           data : response
         })
       }
@@ -146,7 +146,7 @@ const subscribe = async (req,res) => {
     console.log(error)
     res.status(200).send({
       status: false,
-      message: 'Sorry, something went wrong. Please try again later.'
+      message: 'Error, algo ha ido mal. Por favor, vuelve a probar.'
     })
   }
 }
