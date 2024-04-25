@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-// user routes
+// usuario routes
 const userRoutes = require('./src/routes/user.route');
-// product routes
+// productos routes
 const productRoutes = require('./src/routes/product.route')
 // stripe routes
 const stripeRoutes = require('./src/routes/stripe.route')
