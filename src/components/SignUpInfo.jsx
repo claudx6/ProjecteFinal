@@ -17,9 +17,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { getAnimalImage } from '../assets/js/backgroundImage.js';
 import { signUp } from '../services/services.js';
 import { useNavigate } from 'react-router-dom';
-// function getRandomAnimalImageUrl() {
-//   return `https://source.unsplash.com/random?animals&${Math.random()}`;
-// }
+
 
 function SignUp() {
   const [backgroundUrl, setBackgroundUrl] = React.useState(getAnimalImage());
@@ -88,6 +86,7 @@ function SignUp() {
         <Container maxWidth="xs">
           <Box
             sx={{
+              width: '140%',
               backgroundColor: 'rgba(255, 255, 255, 0.7)', // fondo semi-transparente del formulario
               p: 4, // relleno interno al contenedor del formulario
               borderRadius: 8,
