@@ -20,10 +20,10 @@ import {
 
     import "/src/assets/css/ShoppingCartPage.css";
     import '/src/index.css';
-import moment from "moment/moment";
-import { removeFromCart } from "../utilis/common";
-import Model from "./stripe/Model";
-import { useNavigate } from "react-router-dom";
+    import moment from "moment/moment";
+    import { removeFromCart } from "../utilis/common";
+    import Model from "./stripe/Model";
+    import { useNavigate } from "react-router-dom";
     
     export default function ShoppingCartPage() {
       const [productList,setProductList] = useState([]);
@@ -58,7 +58,7 @@ import { useNavigate } from "react-router-dom";
             <MDBCard className="mb-4">
               <MDBCardHeader className="py-3">
                 <MDBTypography tag="h5" className="mb-0">
-                  Cart - {productList.length} items
+                  Carrito - {productList.length} productos
                 </MDBTypography>
               </MDBCardHeader>
               <MDBCardBody>
@@ -81,8 +81,8 @@ import { useNavigate } from "react-router-dom";
                     <p>
                       <strong>{item.title}</strong>
                     </p>
-                    <p>Type: {item.type.toUpperCase()}</p>
-                    <p>Category: {item.category_type.toUpperCase()}</p>
+                    <p>Tipo: {item.type.toUpperCase()}</p>
+                    <p>Categoría: {item.category_type.toUpperCase()}</p>
     
                     <button
                         onClick={()=>handleRemoveCart(item._id)} 
@@ -109,9 +109,8 @@ import { useNavigate } from "react-router-dom";
                         <FaMinus fas icon="minus" />
                       </button>
     
-                      {/* <MDBInput min={0} type="text" value={0} label="Quantity"/> */}
                       <div>
-                      <p className="text-center fw-bold">Quantity</p>
+                      <p className="text-center fw-bold">Cantidad</p>
                       <p className="text-center fw-bold">{item.quantity}</p>
                       </div>
 
@@ -121,7 +120,7 @@ import { useNavigate } from "react-router-dom";
                     </div>
     
                     <p className="text-start text-md-center">
-                      <strong>Price : USD {item.price}$</strong>
+                      <strong>Precio: {item.price}€</strong>
                     </p>
                   </MDBCol>
                 </MDBRow>
@@ -135,7 +134,7 @@ import { useNavigate } from "react-router-dom";
             <MDBCard className="mb-4">
               <MDBCardBody>
                 <p>
-                  <strong>Expected shipping delivery</strong>
+                  <strong>Entrega de envío prevista</strong>
                 </p>
                 <p className="mb-0">{moment().format('ddd MMM-yyyy')} - {moment().add('days',3).format('ddd MMM-yyyy')}</p>
               </MDBCardBody>
@@ -144,7 +143,7 @@ import { useNavigate } from "react-router-dom";
             <MDBCard className="mb-4 mb-lg-0">
               <MDBCardBody>
                 <p>
-                  <strong>We accept</strong>
+                  <strong>Aceptamos</strong>
                 </p>
                 <div className="payment-methods-container">
                     <MDBCardImage className="me-2" style={{width : 45}}
@@ -167,7 +166,7 @@ import { useNavigate } from "react-router-dom";
             <MDBCard className="mb-4">
               <MDBCardHeader>
                 <MDBTypography tag="h5" className="mb-0">
-                  Summary
+                  Pedido
                 </MDBTypography>
               </MDBCardHeader>
               <MDBCardBody>
@@ -176,24 +175,24 @@ import { useNavigate } from "react-router-dom";
                     return <MDBListGroupItem
                     className="d-flex justify-content-between align-items-center border-0 px-0 pb-0" key={key}>
                     {item.short_title}
-                    <span className="fw-bold">{item.quantity} x USD {item.price}$</span>
+                    <span className="fw-bold">{item.quantity} x {item.price}€</span>
                   </MDBListGroupItem>
                   })}
                   
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center px-0">
-                    Shipping
+                    Envío
                     <span>Gratis</span>
                   </MDBListGroupItem>
                   <MDBListGroupItem
                     className="d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                     <div>
-                      <strong>Total amount</strong>
+                      <strong>Total</strong>
                       <strong>
-                        <p className="mb-0">(including VAT)</p>
+                        <p className="mb-0">(IVA incluido)</p>
                       </strong>
                     </div>
                     <span>
-                      <strong>USD {(productList.reduce((total, product) => total + product.price, 0) + 5).toFixed(2)}$</strong>
+                      <strong>{(productList.reduce((total, product) => total + product.price, 0) + 5).toFixed(2)}€</strong>
                     </span>
                   </MDBListGroupItem>
                 </MDBListGroup>
