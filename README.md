@@ -17,3 +17,9 @@ Currently, two official plugins are available:
 <!-- npm i swiper -->
 <!-- npm install @mui/material @mui/icons-material @emotion/styled @emotion/react -->
 <!-- npm install react-icons -->
+<!-- npm install react-redux -->
+<!-- npm install react-icons react-image-gallery react-rater -->
+<!-- npm install mdb-react-ui-kit -->
+<!-- npm install moment -->
+<!-- npm install @stripe/react-stripe-js @stripe/stripe-js -->
+<!-- npm install axios -->
