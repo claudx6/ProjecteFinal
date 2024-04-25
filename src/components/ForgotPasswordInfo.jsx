@@ -20,7 +20,6 @@ export default function ForgotPasswordInfo() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({ email: data.get('email') });
-    // Aquí puedes agregar la lógica para enviar el correo de reseteo de contraseña
   };
 
   return (
