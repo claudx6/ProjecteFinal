@@ -63,7 +63,7 @@ const ServicesSlider = () => {
                 <h1>Lo mejor para nuestros animales</h1>
                 <hr />
                 <p>Descubre nuestra selección de productos de alta calidad para perros, gatos, roedores, peces, aves y reptiles, diseñados para satisfacer todas las necesidades de tus adorables mascotas. ¡Cuida a tus compañeros con amor y calidad!</p>
-                <a href="#" className='slider-btn'>ver más</a>
+                <a href="/tienda" className='slider-btn'>ver más</a>
             </div>
         </div>
 
@@ -109,7 +109,7 @@ const ServicesSlider = () => {
                         <div>
                             <h2>{data.title}</h2>
                             <p>{data.description}</p>
-                            <a href={`${data.url}`} target="_blank" className='slider-btn'>Explorar</a>
+                            <a href='/tienda' target="_blank" className='slider-btn'>Explorar</a>
                         </div>
                     </SwiperSlide>
                 ))
