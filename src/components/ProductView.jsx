@@ -19,7 +19,7 @@ const ProductView = () => {
         quantity : 1,
         type: "",
     })
-    const location = useLocation(); // Fetch the current location using useLocation hook
+    const location = useLocation(); // Obtener ubicación actual usando el hook useLocation
 
     const handleDecreaseQuantity = () => {
         if (product.quantity > 1) {
@@ -46,7 +46,7 @@ const ProductView = () => {
         const searchParams = new URLSearchParams(location.search);
         const id = searchParams.get('productId');
         fetchProduct(id);
-    }, [location.search]); // Re-run the effect whenever the search query changes
+    }, [location.search]);
     return <div className="single-product-main-content">
     <div className="layout">
         <div className="single-product-page">

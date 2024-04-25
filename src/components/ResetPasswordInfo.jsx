@@ -22,7 +22,6 @@ export default function ResetPassword() {
       newPassword: data.get('newPassword'),
       confirmPassword: data.get('confirmPassword'),
     });
-    // Aquí puedes agregar la lógica para actualizar la contraseña
   };
 
   return (
