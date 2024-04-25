@@ -46,41 +46,41 @@ export const serviceDropdown = [
   },
 ];
 
-export const tiendaDropdown = [
-  {
-    id: 1,
-    title: "Perros",
-    path: "/tienda/perros",
-    cName: "submenu-item",
-  },
-  {
-    id: 2,
-    title: "Gatos",
-    path: "/tienda/gatos",
-    cName: "submenu-item",
-  },
-  {
-    id: 3,
-    title: "Peces",
-    path: "/tienda/peces",
-    cName: "submenu-item",
-  },
-  {
-    id: 4,
-    title: "Aves",
-    path: "/tienda/aves",
-    cName: "submenu-item",
-  },
-  {
-    id: 5,
-    title: "Roedores",
-    path: "/tienda/roedores",
-    cName: "submenu-item",
-  },
-  {
-    id: 6,
-    title: "Reptiles",
-    path: "/tienda/reptiles",
-    cName: "submenu-item",
-  },
-];
+// export const tiendaDropdown = [
+//   {
+//     id: 1,
+//     title: "Perros",
+//     path: "/tienda/perros",
+//     cName: "submenu-item",
+//   },
+//   {
+//     id: 2,
+//     title: "Gatos",
+//     path: "/tienda/gatos",
+//     cName: "submenu-item",
+//   },
+//   {
+//     id: 3,
+//     title: "Peces",
+//     path: "/tienda/peces",
+//     cName: "submenu-item",
+//   },
+//   {
+//     id: 4,
+//     title: "Aves",
+//     path: "/tienda/aves",
+//     cName: "submenu-item",
+//   },
+//   {
+//     id: 5,
+//     title: "Roedores",
+//     path: "/tienda/roedores",
+//     cName: "submenu-item",
+//   },
+//   {
+//     id: 6,
+//     title: "Reptiles",
+//     path: "/tienda/reptiles",
+//     cName: "submenu-item",
+//   },
+// ];
