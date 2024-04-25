@@ -49,44 +49,39 @@ const PaymentStatus = () => {
       return;
     }
 
-    // Retrieve the "payment_intent_client_secret" query parameter appended to
-    // your return_url by Stripe.js
+    // Recuperar el parámetro "paid_intent_client_secret" agregado en return_url por Stripe.js
     const clientSecret = new URLSearchParams(window.location.search).get(
       'payment_intent_client_secret'
     );
-    // Retrieve the PaymentIntent
+    // Recuperar PaymentIntent
     stripe
       .retrievePaymentIntent(clientSecret)
       .then(({paymentIntent}) => {
-        // Inspect the PaymentIntent `status` to indicate the status of the payment
-        // to your customer.
+        // Inspeccione el "estado" de PaymentIntent para indicar el estado del pago al cliente
         //
-        // Some payment methods will [immediately succeed or fail][0] upon
-        // confirmation, while others will first enter a `processing` state.
-        //
+        // Algunos métodos de pago [tendrán éxito o fallarán inmediatamente] [0] tras la confirmación, mientras que otros primero entrarán en un estado de "procesamiento"
         // [0]: https://stripe.com/docs/payments/payment-methods#payment-notification
         switch (paymentIntent.status) {
           case 'succeeded':
             localStorage.removeItem("cartItems");
             setMessage('success');
-            setText('Payment Successful!')
+            setText('Pago exitoso!')
             break;
 
           case 'processing':
             setText('Payment Processing...')
-            setMessage("pending");
+            setMessage("pendiente");
             break;
 
           case 'requires_payment_method':
-            // Redirect your user back to your payment page to attempt collecting
-            // payment again
-            setText('Payment failed. Please try another payment method.')
-            setMessage('Payment failed. Please try another payment method.');
+            // Redirige al cliente a la página de pago para intentar cobrar el pago nuevamente
+            setText('Pago fallido. Por favor prueba con otro método de pago.')
+            setMessage('Pago fallido. Por favor prueba con otro método de pago.');
             break;
 
           default:
-            setText('Something went wrong.')
-            setMessage('Something went wrong.');
+            setText('Algo salió mal.')
+            setMessage('Algo salió mala.');
             break;
         }
       });
@@ -101,8 +96,8 @@ const PaymentStatus = () => {
         : message === "pending" ?
         'https://cdn-icons-png.flaticon.com/512/4909/4909989.png' : 'https://toppng.com/uploads/preview/check-mark-png-11553192946zsmjn0upiz.png'} alt="Product" style={styles.productImage} />
     <h2 style={styles.successMessage}>{text}</h2>
-    <p style={styles.successText}>Thank you for your purchase.</p>
-    <Link to="/tienda" style={styles.link}>Continue Shopping</Link>
+    <p style={styles.successText}>Gracias por su compra.</p>
+    <Link to="/tienda" style={styles.link}>Continuar comprando</Link>
   </div>
 </div>;
 };
