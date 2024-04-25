@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
-const newslater = new mongoose.Schema({
-  // Udise Code slno
+const newsletter = new mongoose.Schema({
   email: {
     type: String,
     required: true
@@ -12,4 +11,4 @@ const newslater = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model("newslateruser", newslater);
+module.exports = mongoose.model("newsletteruser", newsletter);

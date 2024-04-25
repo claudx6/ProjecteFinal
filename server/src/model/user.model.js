@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
 const users = new mongoose.Schema({
-  // Udise Code slno
   name: {
     type: String,
     required: true

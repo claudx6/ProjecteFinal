@@ -2,7 +2,7 @@ const bcrypt = require("bcrypt");
 // model
 const user = require("../model/user.model");
 const contactusModel = require("../model/contactus.model");
-const newslater = require("../model/subsrice.model");
+const newsletter = require("../model/subscribe.model");
 const { default: axios } = require("axios");
 const { findOne } = require("../model/products.model");
 
@@ -124,7 +124,7 @@ const getWeatherByCity = async (req,res) => {
 const subscribe = async (req,res) => {
   try {
     const {email} = req.body;
-    const isExist = await newslater.findOne({email : email}).exec();
+    const isExist = await newsletter.findOne({email : email}).exec();
     if(isExist) {
       return res.send({
         status :false,
@@ -132,7 +132,7 @@ const subscribe = async (req,res) => {
         data : isExist
       })
     } else {
-      const response = await newslater(req.body).save();
+      const response = await newsletter(req.body).save();
       if(response) {
         return res.send({
           status :true,

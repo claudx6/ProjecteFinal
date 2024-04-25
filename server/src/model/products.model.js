@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
 const products = new mongoose.Schema({
-  // Udise Code slno
   title: {
     type: String,
     required: true
