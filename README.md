@@ -11,7 +11,7 @@ Currently, two official plugins are available:
 <!-- Para arrancar el projecto -->
 <!-- Arrancar en dos terminales tanto el front como el back -->
 <!-- FRONT-END: Instalar npm install y después en la terminal npm run dev -->
-<!-- BACK-END: Instalar npm install y después en la terminal nodemon index.js -->
+<!-- BACK-END: Instalar npm install en el directorio server, después en la terminal nodemon index.js -->
 
 <!-- librerias para instalar -->
 <!-- npm install --save @fortawesome/free-brands-svg-icons -->

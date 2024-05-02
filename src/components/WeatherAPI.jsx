@@ -50,7 +50,7 @@ function WeatherAPI() {
           />
           <p className="temperature">{(weather?.main?.temp- 273.15).toFixed(1)}°C</p>
           <p className="weather-description">{weather?.weather[0]?.description}</p>
-          <p className="humidity">Humidity: {weather?.main?.humidity}%</p>
+          <p className="humidity">Humedad: {weather?.main?.humidity}%</p>
         </div>
       </div>
     </div>}

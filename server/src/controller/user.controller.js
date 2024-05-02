@@ -101,7 +101,7 @@ const contactUs = async (req,res) => {
 
 const getWeatherByCity = async (req,res) => {
   try {
-    const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${req.query.cityName}&appid=64f60853740a1ee3ba20d0fb595c97d5`);
+    const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${req.query.cityName}&appid=64f60853740a1ee3ba20d0fb595c97d5&lang=es`);
     if(response.data) {
       return res.send({
         status :true,
