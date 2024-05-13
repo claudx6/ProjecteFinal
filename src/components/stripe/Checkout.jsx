@@ -58,7 +58,8 @@ export default function CheckoutForm() {
       elements,
       confirmParams: {
         // Make sure to change this to your payment completion page
-        return_url: "http://localhost:5173/tienda/order",
+        // return_url: "http://localhost:5173/tienda/order",
+        return_url: "https://petitamazones.vercel.app/tienda/order",
       },
     });
 
