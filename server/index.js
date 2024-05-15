@@ -10,24 +10,21 @@ const mongoDB = require('./src/db/db.connection');
 // root router
 const rootRouter = require('./route.index');
 const {PORT,MONGO_URL} = process.env;
-// static
 
 app.use(express.static('public'))
-// parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false,limit : '10mb' }))
 
-// parse application/json
 app.use(bodyParser.json({limit: '10mb'}))
 // cors
 app.use(cors())
 
 
-// connection to mongoDB
+// conectar a mongoDB
 mongoDB().then(()=>{
     console.log(`Database Connected`)
 }).catch(err => console.log(err));
 
-// Set EJS as the view engine
+// EJS como el motor de visualización de nuestra aplicación Express
 app.set('view engine', 'ejs');
 
 app.get("/v1/check",(req,res)=>{
