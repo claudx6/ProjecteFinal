@@ -17,7 +17,7 @@ const getProducts = async (req,res) => {
   }
     return res.send({
         status : true,
-        message : 'Products founded',
+        message : 'Productos encontrados',
         data : products
     })
   } catch (error) {
@@ -32,13 +32,13 @@ const getProductById = async (req,res) => {
     if(products) {
       return res.send({
         status : true,
-        message : 'Product founded',
+        message : 'Producto encontrado',
         data : products
     })
     } else {
       return res.send({
         status : false,
-        message : 'Product Not founded',
+        message : 'Producto no encontrado',
         data : []
     })
     }

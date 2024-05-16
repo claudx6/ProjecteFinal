@@ -57,17 +57,16 @@ export default function CheckoutForm() {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        // Make sure to change this to your payment completion page
-        // return_url: "http://localhost:5173/tienda/order",
-        return_url: "https://petitamazones.vercel.app/tienda/order",
+        return_url: "http://localhost:5173/tienda/order",
+        // return_url: "https://petitamazones.vercel.app/tienda/order",
       },
     });
 
-    // Este punto  se llevará a cabo si hay un error inmediato al confirmar el pago
+    // Este punto se llevará a cabo si hay un error inmediato al confirmar el pago
     if (error.type === "card_error" || error.type === "validation_error") {
       setMessage(error.message);
     } else {
-      setMessage("An unexpected error occurred.");
+      setMessage("Error, no se ha podido confirmar el pago.");
     }
 
     setIsLoading(false);
@@ -83,7 +82,7 @@ export default function CheckoutForm() {
       <PaymentElement id="payment-element" options={paymentElementOptions} />
       <button disabled={isLoading || !stripe || !elements} id="submit" className="button-stripe">
         <span id="button-text">
-          {isLoading ? <div className="spinner" id="spinner"></div> : "Pay now"}
+          {isLoading ? <div className="spinner" id="spinner"></div> : "Pagar ahora"}
         </span>
       </button>
       {/* Muestra cualquier mensaje de error o éxito */}

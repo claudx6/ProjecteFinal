@@ -26,7 +26,7 @@ export default function Model({isProduct}) {
   return (
     <div>
       <button onClick={handleOpen} disabled={!isProduct} className="blue-button btn-lg" type="button">
-        Go to checkout
+        Pagar
     </button>
       <Modal
         aria-labelledby="transition-modal-title"

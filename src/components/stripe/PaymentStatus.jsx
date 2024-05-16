@@ -81,7 +81,7 @@ const PaymentStatus = () => {
 
           default:
             setText('Algo salió mal.')
-            setMessage('Algo salió mala.');
+            setMessage('Algo salió mal.');
             break;
         }
       });

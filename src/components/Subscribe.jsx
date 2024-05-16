@@ -8,14 +8,14 @@ const Subscribe = () => {
     const handleSubscribe = async() => {
         try {
             if(!email) {
-                toast.error('Email is required!');
+                toast.error('Email es obligatorio!');
                 return;
             }
             // Expresión regular para validar el mail
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             
             if (!emailRegex.test(email)) {
-                toast.error('Invalid email format!');
+                toast.error('Inválido formato de email!');
                 return; // Detención si el mail no es válido
             }
             const response = await subscribe({email: email});

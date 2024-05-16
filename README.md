@@ -24,5 +24,8 @@ Currently, two official plugins are available:
 <!-- npm install mdb-react-ui-kit -->
 <!-- npm install moment -->
 <!-- npm install express -->
+<!-- npm install dotenv -->
+<!-- npm install cors -->
+
 <!-- npm install @stripe/react-stripe-js @stripe/stripe-js -->
 <!-- npm install axios -->
